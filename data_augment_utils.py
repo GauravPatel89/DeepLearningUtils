@@ -1,11 +1,3 @@
-import numpy as np
-import time, math
-from tqdm import tqdm_notebook as tqdm
-
-import tensorflow as tf
-import tensorflow.contrib.eager as tfe
-
-
 def replace_slice(input_: tf.Tensor, replacement, begin) -> tf.Tensor:
     inp_shape = tf.shape(input_)
     size = tf.shape(replacement)
