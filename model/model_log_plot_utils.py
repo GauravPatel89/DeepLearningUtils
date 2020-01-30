@@ -1,4 +1,9 @@
+import numpy as np
+import time, math
+import tensorflow as tf
+
 import matplotlib.pyplot as plt
+
 def model_log_plot(trainAccuracy,testAccuracy,trainLosses,testLosses):
   fig, axs = plt.subplots(1,2,figsize=(15,5))   # define a plot with 1 row and 2 columns of subplots
       
