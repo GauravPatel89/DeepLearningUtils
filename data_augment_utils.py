@@ -1,3 +1,8 @@
+import numpy as np
+import time, math
+import tensorflow as tf
+
+
 def replace_slice(input_: tf.Tensor, replacement, begin) -> tf.Tensor:
     inp_shape = tf.shape(input_)
     size = tf.shape(replacement)
