@@ -1,3 +1,7 @@
+import numpy as np
+import time, math
+import tensorflow as tf
+
 def byte_to_tf_feature(value):
   """Returns a bytes_list from a string / byte."""
   return tf.train.Feature(bytes_list=tf.train.BytesList(value=[value]))
